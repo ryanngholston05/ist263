@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6 {
 nav {
     background-color: #444444;
     text-align: center;
+    padding: 10px; /* Adds padding inside the nav */
+    margin-bottom: 30px;
+
 }
 
 /* f. Site Navigation Highlight Color (Hover/Active) */
