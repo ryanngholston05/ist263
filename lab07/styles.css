@@ -1,0 +1,34 @@
+/* a. Body background color */
+body {
+    background-color: #f0f0f0; /* Replace with your preferred color */
+}
+
+/* b. Text color */
+body {
+    color: #333333; /* Replace with your preferred text color */
+}
+
+/* c. Link color */
+a {
+    color: #007bff; /* Replace with your preferred link color */
+}
+
+/* d. Heading color */
+h1, h2, h3, h4, h5, h6 {
+    color: #222222; /* Replace with your preferred heading color */
+}
+
+/* e. Site Navigation Background */
+nav {
+    background-color: #444444; /* Replace with your preferred nav background color */
+}
+
+/* f. Site Navigation Highlight Color (Hover/Active) */
+nav a:hover, nav a:active {
+    background-color: #ffcc00; /* Replace with your preferred highlight color */
+}
+
+/* g. Site Navigation Link Color */
+nav a {
+    color: #ffffff; /* Replace with your preferred nav link color */
+}
