@@ -20,7 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* e. Site Navigation Background */
 nav {
-    background-color: #444444; /* Replace with your preferred nav background color */
+    background-color: #444444;
+    text-align: center;
 }
 
 /* f. Site Navigation Highlight Color (Hover/Active) */
