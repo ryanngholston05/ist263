@@ -36,3 +36,12 @@ nav a:hover, nav a:active {
 nav a {
     color: #007bff; /* Replace with your preferred nav link color */
 }
+
+.row1{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px;}
+
+.row2{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px;}
+
+.address{padding: 15px;}
+.links{padding: 15px;}
+.form{padding: 55px;}
+.map{padding: 15px; margin: 25px;}
