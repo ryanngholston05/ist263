@@ -55,8 +55,14 @@ h1 {
 
  .row {display:flex;}
 
- .icons {display:flex; flex: 3; justify-content: space-evenly; margin: 5px;}
+ .icons {display:flex; flex: 3; justify-content: space-evenly; padding: 25px;}
 
  .otherskills {background-color: #0b0154; color: #bec9f6; border-radius: 10px; padding: 20px; margin: 20px; flex:1;}
 
- .description{margin: 15px;}
+ .description{margin: 15px; align-self: flex-start;}
+
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
