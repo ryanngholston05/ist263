@@ -1,0 +1,68 @@
+
+body {
+    background-color: #bec9f6;
+}
+
+/* b. Text color */
+body {
+    color: #0b0154; /* Replace with your preferred text color */
+}
+
+/* c. Link color */
+a {
+    color: #007bff; /* Replace with your preferred link color */
+}
+
+/* d. Heading color */
+h1, h3, h4, h5, h6 {
+    color: #0b0154; /* Replace with your preferred heading color */
+}
+
+/* e. Site Navigation Background */
+nav {
+    background-color: #444444;
+    text-align: center;
+    padding: 10px; /* Adds padding inside the nav */
+    margin-bottom: 30px;
+
+}
+
+/* f. Site Navigation Highlight Color (Hover/Active) */
+nav a:hover, nav a:active {
+    background-color: #ffcc00; /* Replace with your preferred highlight color */
+}
+
+/* g. Site Navigation Link Color */
+nav a {
+    color: #007bff; /* Replace with your preferred nav link color */
+}
+
+.row1{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px;}
+
+.row2{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px;}
+
+.address{padding: 15px;}
+.links{padding: 15px;}
+.form{padding: 55px;}
+.map{padding: 15px; margin: 25px;}
+
+h1 {
+    text-align: center;
+  }
+
+
+ img {width: 35px; height: 35px;}
+
+ .row {display:flex;}
+
+ .icons {display:flex; flex: 3; justify-content: space-evenly; padding: 25px;}
+
+ .otherskills {background-color: #0b0154; color: #bec9f6; border-radius: 10px; padding: 20px; margin: 20px; flex:1;}
+
+ .description{margin: 15px;}
+
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
