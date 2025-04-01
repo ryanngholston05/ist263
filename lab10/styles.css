@@ -24,7 +24,6 @@ nav {
     text-align: center;
     padding: 10px; /* Adds padding inside the nav */
     margin-bottom: 30px;
-
 }
 
 /* f. Site Navigation Highlight Color (Hover/Active) */
@@ -39,7 +38,7 @@ nav a {
 
 .row1{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px;}
 
-.row2{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px;}
+.row2{display: flex; background-color: whitesmoke; border-radius: 1em; margin: 25px; flex-wrap: wrap;}
 
 .address{padding: 15px;}
 .links{padding: 15px;}
@@ -72,3 +71,28 @@ h1 {
     max-width: 100%;
     height: auto;
 }
+
+.map {
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+form {
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 5px;
+    }
+    
+    nav span {
+        display: none;
+    }
+
+}
+
