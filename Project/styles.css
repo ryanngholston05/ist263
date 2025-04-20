@@ -1,0 +1,30 @@
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #EBFAFF;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-left a {
+    margin-right: 10px;
+    
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+  }
