@@ -41,7 +41,7 @@ body {
   }
 
   .nav-left a:hover {
-    color: #CC5500; /* Burnt orange */
+    color: #f7ac34; /* Burnt orange */
     font-weight: 700; /* Bold on hover */
   }
   
@@ -152,16 +152,100 @@ textarea {
 
 input[type="submit"] {
   padding: 10px 20px;
-  background-color: #CC5500;
+  background-color:  #f7ac34;
   color: white;
   border: none;
   font-weight: 600;
-  cursor: pointer;
   margin-top: 10px;
   border-radius: 4px;
 }
 
 input[type="submit"]:hover {
-  background-color: #b04800;
-  transition: background-color 0.3s ease;
+  background-color: #CC5500;
+}
+
+
+.outfit-gallery {
+  padding: 40px 20px;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* First row animation */
+.first-row {
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Second row animation */
+.second-row {
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.image-row img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframe for sliding in */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Dropdown container */
+
+
+/* Button styling */
+.dropbtn {
+  background: none;
+  border: none;
+  color: #000;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1001;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: #000;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+  color: #f7ac34; /* burnt orange on hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

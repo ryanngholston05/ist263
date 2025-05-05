@@ -12,6 +12,13 @@
 
 
   <style>
+    .first
+    {
+      text-align: center;
+      font-size: 24px;
+    }
+
+
     nav{
       opacity: 0;
     animation: fadeIn 1s ease-in forwards;
@@ -58,6 +65,18 @@
         <a href="home.html">HOME</a> 
         <a href="about.html">ABOUT</a> 
         <a href="contact.html">CONTACT</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">SHOP</button>
+          <div class="dropdown-content">
+            <a href="#">Tops</a>
+            <a href="#">Bottoms</a>
+            <a href="#">Outerwear</a>
+            <a href="#">Accessories</a>
+          </div>
+        </div>
+
+        
       </div>
       <div class="nav-right">
         <a href="home.html"><img src="sun_logo.png" alt="tsehai logo" class="nav-icon"></a>
@@ -72,10 +91,26 @@
 
   <div class="siteContent">
       <main>
-        <section>
-          <h2>Where Culture Meets Fashion</h2>
+        <section class="first">
+          <h1>Where Culture Meets Fashion</h1>
           <p>Welcome to TSEHAI – a brand that blends modern streetwear with cultural elegance. Inspired by bold designs, rich textures, and timeless fashion statements, TSEHAI is more than just clothing – it's a movement.</p>
         </section>
+
+        <section class="outfit-gallery">
+          <div class="image-row first-row">
+            <img src="fit4.png" alt="Outfit 1">
+            <img src="fit5.png" alt="Outfit 2">
+            <img src="fit3.png" alt="Outfit 3">
+          </div>
+        
+          <div class="image-row second-row">
+            <img src="fit2.png" alt="Outfit 4">
+            <img src="fit6.png" alt="Outfit 5">
+            <img src="fit1.png" alt="Outfit 6">
+          </div>
+        </section>
+
+
 
         <section>
           <h3>Shop Our New Collection</h3>
@@ -98,7 +133,7 @@
 
         <section>
           <h3>Stay in the Loop</h3>
-          <p>Subscribe to our newsletter for exclusive deals, early access to new collections, and behind-the-scenes content.</p>
+          <p>Follow all of our socials to stay up to date on exclusive deals, early access to new collections, and behind-the-scenes content.</p>
         </section>
       </main>
 
