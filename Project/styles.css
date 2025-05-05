@@ -67,7 +67,7 @@ body {
   .nav-icon:hover{
     transform: scale(1.2);
   }
-  
+
   .head{
     padding-top: 50px;
     
@@ -111,4 +111,26 @@ body {
 
 .social-icon:hover {
   transform: scale(1.2);
+}
+
+.faq-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #EBFAFF;
+}
+
+.faq-table th,
+.faq-table td {
+  border: 1px solid #cadee5;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.faq-table th {
+  background-color: #cadee5;
+  font-weight: bold;
+}
+
+.faq-table tr:nth-child(even) {
+  background-color: #cadee5;
 }

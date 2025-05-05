@@ -1,65 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact TSEHAI</title>
-</head>
-<body>
-  <header>
-    <h1>Contact TSEHAI</h1>
-    <img src="tsehai.jpg" alt="Description of image">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSEHAI | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  
+    <style>
+      .head {
+      text-align: center;
+      margin-top: 100px; /* creates spacing below fixed nav */
+      padding: 20px;
+      font-size: 24px;
+      }
+  
+      header, main, footer {
+        margin: 30px;
+        padding: 15px;
+      }
+
+      .contact{
+        margin-top: 50px;
+      }
+  
+    </style>
+    
+  </head>
+  <body>
+
     <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="home.html">HOME</a> 
+          <a href="about.html">ABOUT</a> 
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="nav-right">
+          <a href="home.html"><img src="sun_logo.png" alt="tsehai logo" class="nav-icon"></a>
+          <a href="#"><img src="../Project/project_images/search.png" alt="Search" class="nav-icon"></a>
+          <a href="#"><img src="../Project/project_images/cart.png" alt="Shopping Cart" class="nav-icon"></a>
+        </div>
+      </div>
     </nav>
-  </header>
+  
+    <header class="head">
+      <h1>CONTACT & FAQs</h1>
+    </header>
 
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p><strong>Email:</strong> support@tsehai.com</p>
-      <p><strong>Social Media:</strong> @TSEHAIofficial</p>
-    </section>
+    <main>
 
-    <section>
-      <h3>Contact Form</h3>
-      <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
+      <section>
+        <h2>FAQs</h2>
+        <table class="faq-table">
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>How long does shipping take?</td>
+              <td>Standard shipping takes 5–7 business days.</td>
+            </tr>
+            <tr>
+              <td>What is your return policy?</td>
+              <td>Returns are accepted within 14 days for unworn, unwashed items with tags attached.</td>
+            </tr>
+            <tr>
+              <td>Do you ship internationally?</td>
+              <td>Yes, we ship worldwide. Rates and times vary.</td>
+            </tr>
+            <tr>
+              <td>How do I track my order?</td>
+              <td>You’ll receive a tracking link via email after shipment.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
-
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-
-    <section>
-      <h3>FAQs</h3>
-      <dl>
-        <dt>How long does shipping take?</dt>
-        <dd>Standard shipping takes 5–7 business days.</dd>
-
-        <dt>What is your return policy?</dt>
-        <dd>Returns are accepted within 14 days for unworn, unwashed items with tags attached.</dd>
-
-        <dt>Do you ship internationally?</dt>
-        <dd>Yes, we ship worldwide. Rates and times vary.</dd>
-
-        <dt>How do I track my order?</dt>
-        <dd>You’ll receive a tracking link via email after shipment.</dd>
-      </dl>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 TSEHAI. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      <section class="contact">
+        <h2>Get in Touch</h2>
+        <p><strong>Email:</strong> <a href="mailto:support@tsehai.com">support@tsehai.com</a></p>
+      </section>
+  
+      <section>
+        <h3>Contact Form</h3>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+  
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+  
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br><br>
+  
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+  
+      
+    </main>
+  
+  
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="ig.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="tiktok.png" alt="TikTok" class="social-icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="x.png" alt="X" class="social-icon">
+        </a>
+      </div>
+      <p>&copy; 2025 TSEHAI. All rights reserved.</p>
+    </footer>
+  
+  
+  </body>
+  </html>
