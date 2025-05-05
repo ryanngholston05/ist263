@@ -5,26 +5,109 @@ body {
     font-weight: 200;
     font-style: normal;
     background-color: #EBFAFF;
+
+  }
+ 
+  nav {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #EBFAFF;
+    z-index: 1000;
+    
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
+    z-index: 1000;
+    
   }
 
-  nav {
+  .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
+  }
+
+  .nav-left {
+    display: flex;
+    gap: 15px; /* space between links */
   }
   
   .nav-left a {
-    margin-right: 10px;
-    
+    text-decoration: underline;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+
+  .nav-left a:hover {
+    color: #CC5500; /* Burnt orange */
+    font-weight: 700; /* Bold on hover */
   }
   
   .nav-right {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    align-items: center;
   }
-  
+
+  .nav-left a:hover,
+  .nav-right a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
   .nav-icon {
     width: 24px;
     height: 24px;
   }
+
+  .head{
+    padding-top: 50px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .siteContent {
+  
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
+
+  }
+
+
+  @keyframes popIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+  .responsive-img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
