@@ -30,6 +30,7 @@ body {
   .nav-left {
     display: flex;
     gap: 15px; /* space between links */
+    align-items: center;
   }
   
   .nav-left a {
