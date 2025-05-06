@@ -40,7 +40,7 @@ body {
     transition: color 0.3s ease, font-weight 0.3s ease;
   }
 
-  .nav-left a:hover {
+  .nav-left a:hover, .dropbtn:hover {
     color: #f7ac34; /* Burnt orange */
     font-weight: 700; /* Bold on hover */
   }
@@ -52,7 +52,8 @@ body {
   }
 
   .nav-left a:hover,
-  .nav-right a:hover {
+  .nav-right a:hover,
+  .dropbtn:hover {
     opacity: 0.8;
     transition: 0.3s;
   }
@@ -241,11 +242,41 @@ input[type="submit"]:hover {
 }
 
 .dropdown-content a:hover {
-  background-color: #f0f0f0;
   color: #f7ac34; /* burnt orange on hover */
 }
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.image-row img {
+  width: 30%;           
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .image-row img {
+    width: 45%;          /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row img {
+    width: 90%;          /* 1 per row, full width with margin */
+  }
 }
